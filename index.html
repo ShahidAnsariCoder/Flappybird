@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flappy Bird — Mini Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Flappy Bird</h1>
+    <p class="hint">Click / Tap / Press Space to flap. Score by passing pipes.</p>
+
+    <canvas id="game" width="480" height="640" aria-label="Flappy Bird game canvas"></canvas>
+
+    <div class="hud">
+      <div id="score">Score: 0</div>
+      <div id="best">Best: 0</div>
+    </div>
+
+    <div id="overlay" class="overlay hidden">
+      <div class="overlay-card">
+        <h2 id="overlay-title">Game Over</h2>
+        <p id="overlay-sub"></p>
+        <button id="restart">Restart</button>
+      </div>
+    </div>
+
+    <footer>Simple HTML5 canvas game — no assets required</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

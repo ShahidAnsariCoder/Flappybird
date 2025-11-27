@@ -1,0 +1,62 @@
+:root{
+  --bg:#70c5ce;
+  --ground:#d2a66b;
+  --text:#03314b;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:linear-gradient(#9be7f0, var(--bg));
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  padding:20px;
+}
+.wrap{
+  width:520px;
+  max-width:96vw;
+  text-align:center;
+}
+h1{margin:6px 0 2px;font-size:28px}
+.hint{margin:0 0 10px;color:rgba(3,19,30,0.6)}
+canvas{
+  display:block;
+  margin:0 auto;
+  border-radius:8px;
+  background:linear-gradient(#a7e7ff, #86d6e8);
+  box-shadow:0 10px 30px rgba(2,10,20,0.12);
+}
+.hud{display:flex;justify-content:space-between;margin-top:8px;font-weight:700}
+footer{margin-top:10px;font-size:13px;color:rgba(3,19,30,0.65)}
+
+/* overlay */
+.overlay{
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,0.4);
+}
+.hidden{display:none}
+.overlay-card{
+  background:linear-gradient(#fff,#f8f8ff);
+  padding:22px;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  text-align:center;
+  width:300px;
+}
+.overlay-card h2{margin:0 0 8px}
+.overlay-card p{margin:0 0 16px}
+.overlay-card button{
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  background:#ffd166;
+  cursor:pointer;
+  font-weight:700;
+}
